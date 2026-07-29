@@ -35,7 +35,22 @@
     </footer>
 
 </div>
+<button onclick="startSite()">Visit Site</button>
 
+<audio id="bgMusic">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function startSite() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+
+    setTimeout(() => {
+        window.open("https://drive.google.com/drive/folders/1dYyZTJVTXmodjQpIr-0dfKJwoTlKc6Ip?usp=drive_link", "_blank");
+    }, 300);
+}
+</script>
 
 </body>
 </html>
